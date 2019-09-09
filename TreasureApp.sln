@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreasureApp", "TreasureApp\TreasureApp.csproj", "{7ACA3103-F91B-480C-AE54-62A94AD639A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{41585F7E-3F38-45BD-AB2D-9B5758E5AF44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{6AAC771E-8A88-48FB-9228-752178C2E909}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ACA3103-F91B-480C-AE54-62A94AD639A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACA3103-F91B-480C-AE54-62A94AD639A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACA3103-F91B-480C-AE54-62A94AD639A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACA3103-F91B-480C-AE54-62A94AD639A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41585F7E-3F38-45BD-AB2D-9B5758E5AF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41585F7E-3F38-45BD-AB2D-9B5758E5AF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41585F7E-3F38-45BD-AB2D-9B5758E5AF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41585F7E-3F38-45BD-AB2D-9B5758E5AF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AAC771E-8A88-48FB-9228-752178C2E909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AAC771E-8A88-48FB-9228-752178C2E909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAC771E-8A88-48FB-9228-752178C2E909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAC771E-8A88-48FB-9228-752178C2E909}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E5EAC7C-2549-4B76-9B6C-2AE081E1B3B6}
+	EndGlobalSection
+EndGlobal
