@@ -8,7 +8,7 @@
             public const string TrapRoomDescription = "You have encountered a trapped room.";
             public const string TreasureRoomDescription = "You have found the ancient treasure. Congratulations!";
             public const string TrapRoomEvent = "You have a disease and you bleed!";
-            public const string TreasureRoomEvent = "Your efforts has been rewarded!";
+            public const string TreasureRoomEvent = "Your efforts has been rewarded! Steps required: ";
             public const string CheckForTreasure = "You are searching carefully the surroundings for a treasure.";
             public const string NormalRoomDescription = "The room that you entered looks similar to all other rooms.";
         }

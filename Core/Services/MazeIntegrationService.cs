@@ -21,8 +21,8 @@ namespace Core.Services
             // We need to use the sqare number of size since we will have a 2D space.
             var matrixSize = size * size;
 
-            _connectToMaze.GetMazeMapInstance().mazeRooms
-                .AddRange(_mazeBuilder.CreateRooms(matrixSize, _mazeBuilder.ComputeNumberOfTraps(matrixSize)));
+            _connectToMaze.GetMazeMapInstance().mazeRooms =
+                _mazeBuilder.CreateRooms(matrixSize, _mazeBuilder.ComputeNumberOfTraps(matrixSize));
             _connectToMaze.GetMazeMapInstance().mazeSize = size;
         }
 

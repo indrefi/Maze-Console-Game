@@ -3,7 +3,7 @@ using System;
 
 namespace Core.Utils
 {
-    class RoomUtil
+    public class RoomUtil
     {
         /// <summary>Computes the next room identifier.</summary>
         /// <param name="roomId">The room identifier.</param>

@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexts\MazeContext.cs" />
-    <Compile Include="Contexts\PlayerContext.cs" />
+    <Compile Include="Contexts\MazeMemoryContext.cs" />
+    <Compile Include="Contexts\PlayerMemoryContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -30,7 +30,7 @@ namespace Core.Services
             }
             if (_mazeIntegration.HasTreasure(_loadPlayer.GetPlayerInstance().CurrentRoom.Id))
             {
-                Console.WriteLine(Constants.RoomConstants.TreasureRoomEvent);
+                Console.WriteLine($"{Constants.RoomConstants.TreasureRoomEvent} {_loadPlayer.GetPlayerInstance().StepsMade}");
                 _loadPlayer.GetPlayerInstance().FoundTreasure = true;
             }
         }
