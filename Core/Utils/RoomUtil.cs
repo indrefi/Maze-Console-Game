@@ -25,9 +25,15 @@ namespace Core.Utils
                     break;
                 case "w":
                     searchedRoomId = searchedRoomId - 1;
+                    // Check if move is allowed not to cross walls
+                    if (!IsAllowedMove(roomId, searchedRoomId, mazeSize * mazeSize))
+                        searchedRoomId = -1;
                     break;
                 case "e":
                     searchedRoomId = searchedRoomId + 1;
+                    // Check if move is allowed not to cross walls
+                    if (!IsAllowedMove(roomId, searchedRoomId, mazeSize * mazeSize))
+                        searchedRoomId = -1;
                     break;
                 default:
                     break;
@@ -57,6 +63,22 @@ namespace Core.Utils
             if (!room.HasTreasure && !room.HasTrap && !room.IsEntrance) return Constants.RoomConstants.NormalRoomDescription;
 
             return string.Empty;
+        }
+
+        /// <summary>Determines if the move is allowed not to cross walls.</summary>
+        /// <param name="room">The room.</param>
+        /// <param name="secondRoom">The second room.</param>
+        /// <param name="numberOfRooms">The number of rooms.</param>
+        /// <returns>If move is possible or not even the rooms exists</returns>
+        public static bool IsAllowedMove(int room, int secondRoom, int numberOfRooms)
+        {
+            var size = (int)Math.Sqrt(numberOfRooms);
+            var xRoom = room / size;
+            var xSecondRoom = secondRoom / size;
+
+            if (xRoom == xSecondRoom) return true;
+
+            return false;
         }
     }
 }
